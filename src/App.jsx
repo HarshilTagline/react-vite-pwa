@@ -44,22 +44,22 @@ function App() {
         <Container>
           <Nav className="me-auto">
             <Nav.Link>
-              <Link to="/react-vite-pwa/">Home</Link>
+              <Link to="/">Home</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/react-vite-pwa/users">Users</Link>
+              <Link to="/users">Users</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/react-vite-pwa/about">About</Link>
+              <Link to="/about">About</Link>
             </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
       {notification.show && <Alert variant={notification.type} dismissible onClose={onClose}>{notification.message}</Alert>}
       <Routes>
-        <Route exact path="/react-vite-pwa/" element={<Home />} />
-        <Route exact path="/react-vite-pwa/users" element={<Users />} />
-        <Route exact path="/react-vite-pwa/about" element={<About />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/users" element={<Users />} />
+        <Route exact path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   </div>
